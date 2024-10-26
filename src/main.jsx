@@ -7,6 +7,7 @@ import Home from './Pages/Home.jsx'
 import Layout from './Pages/Layout.jsx'
 import SingUp from './Pages/SingUp.jsx'
 import Product from './Pages/Product.jsx'
+import ResponsiveAppBar from './Componets/ResponsiveAppBar.jsx'
 
 const router=createBrowserRouter([
   {
@@ -31,7 +32,7 @@ const router=createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    
+    <ResponsiveAppBar/>
     <RouterProvider router={router} />
   </StrictMode>,
 )

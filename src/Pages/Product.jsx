@@ -11,7 +11,7 @@ const Product = () => {
 
   useEffect(() => {
     fetch('https://course-admission-portal.vercel.app/api/v1/student')
-      .then(res => res.json())
+      .then(res => res.json())  
       .then(res => {
         console.log(res)
         setStudent(res)
@@ -24,7 +24,6 @@ const Product = () => {
       })
   }, [])
 
-  // usenavigate
   const navigate = useNavigate()
 
   const singlestudent = (item) => {
